@@ -2,6 +2,9 @@ const createCard = (item) => {
   const card = document.createElement("div");
   card.setAttribute("class", "card selected");
   card.setAttribute("id", item.id);
+  if(item.featured){
+    card.classList.add("card--featured");
+  }
   card.appendChild(createCardBody(item));
   card.appendChild(createCardFooter(item));
   return card;
