@@ -1,0 +1,76 @@
+html { font-size: 62.5%; } 
+body { 
+    font-size: 1.5rem; 
+    font-family: 'Spartan', sans-serif;
+    font-weight: 300;
+    background-color: $color-background;
+}
+
+*,
+*::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color:inherit;
+}
+
+button{
+    border:none;
+    outline:none;
+    cursor:pointer;
+}
+header{
+    background: url('../../images/bg-header-mobile.svg') no-repeat center center;
+    background-size: cover;
+    background-color: $color-dark-cyan;
+    width:100%;
+    height:15.6rem;
+    @media screen and(min-width:768px){
+        background: url('../../images/bg-header-desktop.svg') no-repeat center center;
+        background-size: cover;
+        background-color: $color-dark-cyan;
+    }
+}
+
+main{
+    width:100%;
+    max-width:115.8rem;
+    padding:0 2.4rem;
+    margin:0 auto;
+    // margin: 5.4rem auto 0;
+    // @media screen and(min-width:768px){
+    //     margin-top:7.6rem;
+    // }
+}
+
+.badge{
+    background:$color-background;
+    color: $color-dark-cyan;
+    padding:0.6rem 1rem;
+    font-size:1rem;
+    margin-left:1rem;
+    &--rounded{
+        border-radius: 2.4rem;
+    }
+    &--blue{
+        background:$color-dark-cyan;
+    color: #fff;
+}
+    &--black{
+        background:$color-very-dark-grayish-cyan;
+    color: #fff;
+}
+}

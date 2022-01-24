@@ -1,0 +1,23 @@
+{
+  "name": "static-job-listings",
+  "version": "1.0.0",
+  "description": "![Design preview for the Job listings with filtering coding challenge](./design/desktop-preview.jpg)",
+  "main": "webpack.config.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "start": "webpack serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.5.1",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.5.0",
+    "postcss-loader": "^6.2.1",
+    "webpack": "^5.66.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.3"
+  }
+}
