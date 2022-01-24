@@ -14,8 +14,8 @@ getData("../data.json", cardsSection).then(()=>{
         btn.addEventListener('click',()=>{
             if(!filterList.includes(btn.innerHTML)){
                 filterList.push(btn.innerHTML);
+                setFiltersSection(filtersSection, filtersContainer, filterList, cards, btn.innerText);
             }
-            setFiltersSection(filtersSection, filtersContainer, filterList, cards, btn.innerText);
             showCards(cards,filterList)
         });
     });
